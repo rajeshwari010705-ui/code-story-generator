@@ -1,0 +1,260 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+  color: #111;
+}
+
+/* =========================
+   MAIN PAGE CONTAINER
+========================= */
+.page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* =========================
+   CARD BASE STYLE
+========================= */
+.card {
+  background: #ffffff;
+  padding: 30px 24px;
+  border-radius: 20px;
+  min-height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  /* Animation initial */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* When visible */
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   TEXT STYLES
+========================= */
+.card h1 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.card h2 {
+  font-size: 22px;
+}
+
+.card p,
+.card li {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* =========================
+   BUTTON
+========================= */
+button {
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   CARD COLOR THEMES
+========================= */
+.hero {
+  background: linear-gradient(135deg, #1f7a3f, #2ecc71);
+  color: #ffffff;
+}
+
+.green {
+  background: #1f7a3f;
+  color: #ffffff;
+}
+
+.pink {
+  background: #f3c6e8;
+  color: #111;
+}
+
+.yellow {
+  background: #f7e96d;
+  color: #111;
+}
+
+.red {
+  background: #7a0f1c;
+  color: #ffffff;
+}
+
+.purple {
+  background: #6a4df4;
+  color: #ffffff;
+}
+
+.light {
+  background: #ffffff;
+  color: #111;
+}
+
+.dark {
+  background: #111827;
+  color: #ffffff;
+}
+
+/* Button contrast on dark cards */
+.hero button,
+.green button,
+.red button,
+.purple button,
+.dark button {
+  background: #ffffff;
+  color: #111;
+}
+
+/* =========================
+   LIST STYLE
+========================= */
+ol {
+  padding-left: 20px;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .page {
+    padding: 14px;
+  }
+
+  .card {
+    padding: 22px 18px;
+    min-height: auto;
+  }
+
+  .card h1 {
+    font-size: 22px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .card p,
+  .card li {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =========================
+   LAPTOP / DESKTOP
+========================= */
+@media (min-width: 900px) {
+  .page {
+    max-width: 1100px;
+  }
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+/* Scroll fade + slide */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button hover */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Hero gradient animation */
+.hero {
+  background: linear-gradient(120deg, #1f7a3f, #2ecc71, #27ae60);
+  background-size: 200% 200%;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card hover lift */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Soft blur background */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: rgba(46, 204, 113, 0.25);
+  filter: blur(100px);
+  z-index: -1;
+}
+
+body::before {
+  top: -80px;
+  left: -80px;
+}
+
+body::after {
+  bottom: -80px;
+  right: -80px;
+}

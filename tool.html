@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code → Real-World Story Generator</title>
+
+  <!-- IMPORTANT FOR RESPONSIVE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="tool.css">
+
+  <!-- jsPDF (for PDF download) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <h1>Code → Real-World Story Generator</h1>
+
+  <!-- Top Right Icons -->
+  <div class="top-icons">
+    <button class="icon-btn" title="Toggle Theme" onclick="toggleTheme()">🌙</button>
+  </div>
+</header>
+
+
+  <!-- MAIN CONTAINER -->
+  <div class="tool-container">
+
+    <!-- LEFT PANEL (INPUT) -->
+    <div class="left">
+      <h3>Enter Your Code</h3>
+
+      <textarea id="codeInput" placeholder="Paste Python / C / Java code here..."></textarea>
+
+      <label>Select Output Language</label>
+      <select id="langSelect">
+        <option value="english">English</option>
+        <option value="tamil">Tamil</option>
+      </select>
+
+      <button onclick="generateStory()">Generate Story</button>
+      <button onclick="lineByLine()">Line by Line Explanation</button>
+      <button onclick="speakStory()">Voice Explanation</button>
+      <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <!-- RIGHT PANEL (OUTPUT) -->
+    <div class="right">
+
+      <div class="box">
+        <h3>Real-World Story</h3>
+        <p id="storyOutput">Story will appear here...</p>
+      </div>
+
+      <div class="box">
+        <h3>Line-by-Line Explanation</h3>
+        <p id="lineOutput">Line explanation will appear here...</p>
+      </div>
+
+      <div class="box">
+        <h3>Difficulty Level</h3>
+        <p id="difficulty">Not analysed</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS -->
+  <script src="tool.js"></script>
+</body>
+</html>

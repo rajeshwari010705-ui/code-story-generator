@@ -1,0 +1,75 @@
+{
+  "assignment": {
+    "english": {
+      "short": "The program stores information in variables.",
+      "detailed": "The program saves values into variables, similar to writing details in a form for later use."
+    },
+    "tamil": {
+      "short": "இந்த நிரல் தகவல்களை மாறிகளில் சேமிக்கிறது.",
+      "detailed": "படிவத்தில் விவரங்களை எழுதுவது போல, இந்த நிரல் மதிப்புகளை மாறிகளில் சேமிக்கிறது."
+    }
+  },
+
+  "print": {
+    "english": {
+      "short": "The stored information is shown to the user.",
+      "detailed": "The program displays the stored information on the screen so the user can see the result."
+    },
+    "tamil": {
+      "short": "சேமிக்கப்பட்ட தகவல் பயனருக்கு காட்டப்படுகிறது.",
+      "detailed": "சேமிக்கப்பட்ட தகவல்கள் திரையில் பயனருக்கு காட்டப்படுகின்றன."
+    }
+  },
+
+  "if": {
+    "english": {
+      "short": "A condition is checked before taking a decision.",
+      "detailed": "The program checks a condition, similar to verifying eligibility before allowing access."
+    },
+    "tamil": {
+      "short": "முடிவு எடுப்பதற்கு முன் ஒரு நிபந்தனை சரிபார்க்கப்படுகிறது.",
+      "detailed": "அனுமதி வழங்குவதற்கு முன் தகுதி சரிபார்ப்பது போல, இந்த நிரல் நிபந்தனையைச் சரிபார்க்கிறது."
+    }
+  },
+
+  "loop": {
+    "english": {
+      "short": "The same action is repeated multiple times.",
+      "detailed": "The program repeats an action again and again, similar to performing a daily routine task."
+    },
+    "tamil": {
+      "short": "ஒரே செயல் பலமுறை செய்யப்படுகிறது.",
+      "detailed": "தினசரி பழக்கத்தைப் போல, இந்த நிரல் ஒரே செயலை மீண்டும் மீண்டும் செய்கிறது."
+    }
+  },
+
+  "comment": {
+    "english": {
+      "short": "This line explains the program.",
+      "detailed": "The comment provides additional explanation to help understand the program."
+    },
+    "tamil": {
+      "short": "இந்த வரி நிரலின் விளக்கமாகும்.",
+      "detailed": "நிரலை புரிந்து கொள்ள இந்த விளக்கக் குறிப்பு உதவுகிறது."
+    }
+  },
+
+  "combinedStories": {
+    "assignment_print": {
+      "english": "The program stores information and then displays it to the user, similar to filling a form and showing the details.",
+      "tamil": "படிவத்தில் தகவல்களை சேமித்து பின்னர் காட்டுவது போல, இந்த நிரல் தகவல்களை சேமித்து பயனருக்கு காட்டுகிறது."
+    },
+    "if_print": {
+      "english": "The program checks a condition and displays the result based on the decision taken.",
+      "tamil": "ஒரு நிபந்தனையைச் சரிபார்த்து, அதன் அடிப்படையில் முடிவை பயனருக்கு காட்டுகிறது."
+    },
+    "loop_print": {
+      "english": "The program repeats actions and shows the output each time.",
+      "tamil": "செயல்களை மீண்டும் மீண்டும் செய்து, ஒவ்வொரு முறையும் வெளியீட்டை காட்டுகிறது."
+    },
+    "if_loop_print": {
+      "english": "The program takes decisions while repeatedly performing tasks and shows the final result.",
+      "tamil": "முடிவுகளை எடுத்து, செயல்களை மீண்டும் மீண்டும் செய்து இறுதியில் முடிவை காட்டுகிறது."
+    }
+  }
+}
